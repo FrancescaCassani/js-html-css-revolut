@@ -9,6 +9,10 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+a {
+    color:#888;
+}
+
 .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -17,7 +21,6 @@ body {
 
 /* BOTTONI */
 .btn {
-    padding: 8px 10px;
     background: deeppink;
     border-radius: 20px;
     text-decoration: none;
@@ -29,6 +32,7 @@ body {
     display: flex;
     align-items: center;
     padding: 15px 25px;
+    margin-top: 25px;
 }
 
 [class*=wrap-nav] ul {
@@ -41,9 +45,9 @@ body {
 }
   
 [class*=wrap-nav] ul li a {
+    padding: 8px;
     font-size: 15px;
     text-decoration: none;
-    color:#888;
 }
 
 /* Left */
@@ -68,13 +72,25 @@ body {
 }
 
 
-
 /* Right */
 .wrap-nav-right {
     display: flex;
     justify-content: flex-end;
     flex-basis: 70%; 
 }
+
+.wrap-nav-right .right {
+    position: relative;
+}
+
+.wrap-nav-right .right li a i{
+    position: absolute;
+    top: 8px;
+    margin-left: 1px;
+    transform: scale(0.6);
+}
+
+
 
 
 
